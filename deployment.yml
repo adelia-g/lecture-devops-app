@@ -52,7 +52,7 @@ spec:
     spec:
       containers:
         - name: todo
-          image: 'raydockhub/todo'
+          image: 'gcpraydockhub/todo'
           ports:
             - containerPort: 3000
           imagePullPolicy: Always
