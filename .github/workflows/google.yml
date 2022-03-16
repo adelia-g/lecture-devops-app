@@ -24,8 +24,8 @@ env:
   GKE_CLUSTER: zalenium    # TODO: update to cluster name
   GKE_ZONE: us-central1-c   # TODO: update to cluster zone
   DEPLOYMENT_NAME: todo # TODO: update to deployment name
-  REPOSITORY: gcpraydockhub # TODO: update to Artifact Registry docker repository
-  IMAGE: client
+  REPOSITORY: todo # TODO: update to Artifact Registry docker repository
+  IMAGE: app
 
 jobs:
   setup-build-publish-deploy:
