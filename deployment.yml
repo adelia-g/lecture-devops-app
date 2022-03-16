@@ -52,7 +52,7 @@ spec:
     spec:
       containers:
         - name: todo
-          image: 'gcpraydockhub/todo'
+          image: 'us-central1-docker.pkg.dev/western-mix-343614/todo/app:b99c1f8574b2b6278261def9c039458fc6317b6e'
           ports:
             - containerPort: 3000
           imagePullPolicy: Always
