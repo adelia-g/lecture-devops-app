@@ -10,7 +10,7 @@ metadata:
     version: v1
 data:
   client.url: localhost:80
-  mongo.db.url: mongodb://todo-mongo-service:27017/todo-app
+  mongo.db.url: mongodb://todomongodb-mongodb-replicaset-0:27017/todo-app
   port: "3000"
   
 ---
