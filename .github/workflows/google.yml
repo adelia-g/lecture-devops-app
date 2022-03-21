@@ -19,7 +19,7 @@ on:
       - main
 
 env:
-  PROJECT_ID: ${{ secrets.GKE_PROJECT }} # western-mix-343614
+  PROJECT_ID: ${{ secrets.GKE_PROJECT }} # todo-project-344814
   GAR_LOCATION: us-central1 # TODO: update region of the Artifact Registry
   GKE_CLUSTER: zalenium    # TODO: update to cluster name
   GKE_ZONE: us-central1-c   # TODO: update to cluster zone
@@ -28,6 +28,8 @@ env:
   REPOSITORY: todo # TODO: update to Artifact Registry docker repository
   IMAGE: app
 
+  # projects/59295950721/locations/global/workloadIdentityPools/my-pool/providers/my-provider
+  # my-service-account@todo-project-344814.iam.gserviceaccount.com
 jobs:
   setup-build-publish-deploy:
     name: Setup, Build, Publish, and Deploy
@@ -48,8 +50,8 @@ jobs:
     #   uses: 'google-github-actions/auth@v0'
     #   with:
     #     token_format: 'access_token'
-    #     workload_identity_provider: 'projects/166245383676/locations/global/workloadIdentityPools/actions-pool/providers/actions-provider'
-    #     service_account: 'actions-service-account@western-mix-343614.iam.gserviceaccount.com'
+    #     workload_identity_provider: 'projects/59295950721/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
+    #     service_account: 'my-service-account@todo-project-344814.iam.gserviceaccount.com'
 
     # Alternative option - authentication via credentials json file
     - id: 'auth'
